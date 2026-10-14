@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/br_diner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="50.0dip"
+    android:background="@drawable/bg_rectangle_black73_47_cr10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@drawable/bg_rectangle_orange_hgr_crt10_1">
+
+        <TextView
+            android:id="@id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10.0dip"
+            android:fontFamily="@font/muller_bold"
+            android:gravity="center"
+            android:text="@string/dinner_title_name_dialog"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginEnd="25.0dip"
+            android:background="@drawable/ic_close_single" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:orientation="horizontal"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:id="@+id/br_diner_hotdog"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/img_red_ellipse" />
+
+                <ImageView
+                    android:id="@id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15.0dip"
+                    app:srcCompat="@drawable/img_hotdog" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/muller_bold"
+                    android:text="@string/dinner_product_hotdog"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/br_diner_cheburek"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/img_red_ellipse">
+
+                <ImageView
+                    android:id="@id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.0dip"
+                    app:srcCompat="@drawable/img_cheburek" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:text="@string/dinner_product_cheburek"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/br_diner_pie"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/img_red_ellipse">
+
+                <ImageView
+                    android:id="@id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    app:srcCompat="@drawable/img_pie" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:text="@string/dinner_product_pie"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/br_diner_sausage"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/img_red_ellipse">
+
+                <ImageView
+                    android:id="@id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    app:srcCompat="@drawable/img_sausage" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/dinner_product_sausage"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/br_diner_coffee"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/img_red_ellipse">
+
+                <ImageView
+                    android:id="@id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    app:srcCompat="@drawable/img_coffe" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView25"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:text="@string/dinner_product_coffee"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/br_diner_tea"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginRight="2.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_button_gray"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/img_red_ellipse">
+
+                <ImageView
+                    android:id="@id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/img_tea" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/textView28"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:text="@string/dinner_product_tea"
+                    android:textColor="@color/orange"
+                    android:textSize="9.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_price_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <TextView
+                    android:id="@+id/br_diner_satiety_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muller_bold"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:orientation="horizontal"
+        android:weightSum="5.0">
+
+        <FrameLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.3"
+            android:background="@drawable/bg_rectangle_black73_cr5">
+
+            <TextView
+                android:id="@+id/br_diner_price_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/muller_bold"
+                android:gravity="center"
+                android:text="@string/dinner_title_price_sum"
+                android:textColor="@color/white"
+                android:textSize="15.0sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/br_diner_purchace_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="2.5dip"
+            android:layout_weight="1.7"
+            android:alpha="0.5"
+            android:background="@drawable/bg_rectangle_orange_hgr_cr5"
+            android:clickable="true">
+
+            <TextView
+                android:id="@id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10.0dip"
+                android:fontFamily="@font/muller_bold"
+                android:gravity="center"
+                android:text="@string/common_buy"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                app:drawableLeftCompat="@drawable/ic_purchase_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
