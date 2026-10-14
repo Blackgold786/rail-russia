@@ -22,10 +22,10 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-
-      - name: Install SDK components
-        run: |
-          sdkmanager "platforms;android-30" "build-tools;30.0.2" "platform-tools"
+        with:
+          packages: 'platform-tools platforms;android-30 build-tools;30.0.2'
+          accept-android-sdk-licenses: true
+          log-accepted-android-sdk-licenses: false
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -34,6 +34,9 @@ jobs:
         run: |
           rm -f local.properties
           echo "sdk.dir=$ANDROID_HOME" > local.properties
+
+      - name: Show installed SDK packages
+        run: sdkmanager --list_installed
 
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
